@@ -1,0 +1,24 @@
+Apr 26 12:01:03 server01 systemd[1]: Started Session 102 of user root.
+Apr 26 12:01:05 server01 sshd[1023]: Accepted password for admin from 192.168.1.45 port 54321 ssh2
+Apr 26 12:01:07 server01 sshd[1023]: pam_unix(sshd:session): session opened for user admin(uid=1000)
+Apr 26 12:02:11 server01 kernel: [ 1234.567890] EXT4-fs (sda1): mounted filesystem with ordered data mode
+Apr 26 12:03:22 server01 systemd[1]: Starting Apache Web Server...
+Apr 26 12:03:23 server01 httpd[1102]: AH00558: httpd: Could not reliably determine the server's fully qualified domain name
+Apr 26 12:03:24 server01 httpd[1102]: error: Failed to bind to port 80 (Address already in use)
+Apr 26 12:03:24 server01 systemd[1]: httpd.service: Main process exited, code=exited, status=1/FAILURE
+Apr 26 12:03:24 server01 systemd[1]: httpd.service: Failed with result 'exit-code'.
+Apr 26 12:04:01 server01 sshd[1130]: error: Failed password for invalid user guest from 203.0.113.5 port 60123 ssh2
+Apr 26 12:04:05 server01 sshd[1130]: Connection closed by invalid user guest 203.0.113.5 port 60123 [preauth]
+Apr 26 12:05:33 server01 kernel: [ 1300.123456] error: CPU0: Core temperature above threshold, cpu clock throttled
+Apr 26 12:06:10 server01 systemd[1]: Starting Daily Cleanup of Temporary Directories...
+Apr 26 12:06:12 server01 systemd-tmpfiles[1155]: error: Failed to remove file /tmp/testfile: Permission denied
+Apr 26 12:07:45 server01 sudo[1188]: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/systemctl restart httpd
+Apr 26 12:07:47 server01 httpd[1201]: error: Configuration test failed, exiting
+Apr 26 12:07:47 server01 systemd[1]: httpd.service: Failed to start The Apache HTTP Server.
+Apr 26 12:08:55 server01 kernel: [ 1405.987654] error: Out of memory: Kill process 1201 (httpd) score 100 or sacrifice child
+Apr 26 12:09:10 server01 systemd[1]: Started Cleanup of Temporary Directories.
+Apr 26 12:10:22 server01 sshd[1222]: Accepted publickey for admin from 192.168.1.50 port 55221 ssh2
+Apr 26 12:11:30 server01 systemd[1]: Starting MariaDB database server...
+Apr 26 12:11:31 server01 mysqld[1250]: error: Can't open and lock privilege tables: Table 'mysql.user' doesn't exist
+Apr 26 12:11:31 server01 systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+Apr 26 12:11:31 server01 systemd[1]: mariadb.service: Failed with result 'exit-code'.
